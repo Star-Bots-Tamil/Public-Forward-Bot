@@ -7,7 +7,7 @@ BOT_USERNAME=Config.BOT_USERNAME
 class User(Client):
     def __init__(self):
         super().__init__(
-            name="past-file-forward-user",
+            Config.USER_SESSION,
             session_string=Config.SESSION,
             api_hash=Config.API_HASH,
             api_id=Config.API_ID,
