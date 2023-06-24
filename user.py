@@ -2,6 +2,7 @@ from config import Config
 from config import LOGGER
 from pyrogram import Client, __version__
 import asyncio
+import struct
 BOT_USERNAME=Config.BOT_USERNAME
 
 class User(Client):
