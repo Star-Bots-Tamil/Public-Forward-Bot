@@ -8,7 +8,7 @@ class User(Client):
     def __init__(self):
         super().__init__(
             Config.USER_SESSION,
-            session_string=Config.SESSION,
+            Config.SESSION,
             api_hash=Config.API_HASH,
             api_id=Config.API_ID,
             workers=10
