@@ -9,8 +9,8 @@ class User(Client):
         super().__init__(
             Config.USER_SESSION,
             Config.SESSION,
-            api_hash=Config.API_HASH,
-            api_id=Config.API_ID,
+            Config.API_HASH,
+            Config.API_ID,
             workers=10
         )
         self.LOGGER = LOGGER
